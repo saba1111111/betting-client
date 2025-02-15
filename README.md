@@ -4,19 +4,6 @@ This is a scalable React client application for an online betting dashboard. The
 
 ---
 
-## Table of Contents
-
-- [Features](#features)
-- [Scalability & Best Practices](#scalability--best-practices)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Running Locally](#running-locally)
-- [Available Scripts](#available-scripts)
-- [API Integration](#api-integration)
-- [License](#license)
-
----
-
 ## Features
 
 - **Authentication:**
@@ -39,25 +26,6 @@ This is a scalable React client application for an online betting dashboard. The
 - **Styling:**
   - SCSS is used for styling with a modular structure.
   - Responsive and modern design with clear separation of concerns.
-
----
-
-## Scalability & Best Practices
-
-- **Protected & Public Routes:**  
-  The client implements both protected routes (accessible only when a token exists) and public routes (preventing logged-in users from accessing login and register pages). This ensures a clear user flow.
-
-- **API Abstraction:**  
-  The `api.ts` service abstracts all API calls and automatically attaches the JWT token to each request. This centralizes API configuration for easy modifications.
-
-- **Modular Architecture:**  
-  Components, pages, services, and types are organized in dedicated folders, making it easier to extend or modify individual parts of the application.
-
-- **Styling with SCSS:**  
-  Global variables and component-specific SCSS files help maintain a consistent and easily customizable design.
-
-- **Pagination Ready:**  
-  Although the initial dataset is small, the API integration uses pagination parameters (e.g., `?page=1&pageSize=10`) to support future data growth.
 
 ---
 
